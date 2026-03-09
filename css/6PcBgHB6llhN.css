@@ -1,0 +1,441 @@
+/* @import url('http://example.com/example_style.css'); */
+
+@import url('slick-theme.css');
+@import url('slick.css');
+
+/***********************************************/
+/* CSS @imports must be at the top of the file */
+/* Add them above this section                 */
+/***********************************************/
+
+/*****************************************/
+/* Start your style declarations here    */
+/*****************************************/
+
+
+/*---------------- SECONDARY CTA STYLING ----------------*/
+
+.c-cta-con .cta-four, .c-cta-con .cta-five,
+.c-cta-con .cta-four, .c-cta-con .cta-five,
+.c-cta-con .cta-four, .c-cta-con .cta-five,
+.cta-four, .cta-five {
+  text-decoration: underline !important;
+  text-underline-offset: 10px !important;
+  transition: all 0.2s ease-in-out !important;
+}
+
+.c-cta-con:hover .cta-four, .c-cta-con:hover .cta-five,
+.c-cta-con:active .cta-four, .c-cta-con:active .cta-five,
+.c-cta-con:focus .cta-four, .c-cta-con:focus .cta-five,
+.cta-four, .cta-five {
+  transform: translate(0, -3px) !important;
+  text-underline-offset: 13px !important;
+}
+
+
+.c-in-2, .c-in-3 {gap:15px; flex-wrap:wrap;}
+.c-cta-con {margin:0 !important }
+.c-in-2 .c-cta-con:first-of-type {margin-right:0px !important;}
+.c-in-2 .c-cta-con:last-of-type {margin-left:0px !important;}
+
+
+
+/*---------------- EYEBROW TEXT STYLE ----------------*/
+
+.eyebrow {
+  font-weight: bold;
+  font-size: 17px;
+  margin-bottom: 10px;
+  font-family: "Gibson";
+}
+
+/*---------------- TO ALLOW HEADINGS TO CHANGE FONT FAMILIES FOR VISUAL INTEREST ----------------*/
+
+.gibson {
+  font-family: "Gibson"!important;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0px;
+  line-height: 1em;
+}
+
+.georgia {
+  font-family: "Georgia Pro", Georgia, serif !important;
+  text-transform: none;
+  font-weight: 300;
+  letter-spacing: 0px;
+  line-height: 1.1em;
+}
+
+/*---------------- BLOCKQUOTE ----------------*/
+
+blockquote {
+  background-color: #F3ECE4;
+  text-indent: 0;
+  padding: 32px;
+}
+
+/*---------------- FORM FIELD STYLING ----------------*/
+
+input, select {
+  border-top: none !important;
+  border-right: none !important;
+  border-left: none !important;
+  border-bottom: 1px solid;
+}
+
+input:focus {
+  background-color:#fff;
+}
+
+.hs-form input:focus {
+  background-color:#91EBC9;
+}
+
+  /* Fields */
+
+  .lpForm form .input {margin-right:0 !important;margin-bottom: 3px;}
+  .lpForm form fieldset { max-width:inherit !important; margin:0 -10px !important;  }
+  .lpForm form fieldset.form-columns-1 .field { width:100% !important; }
+  .lpForm form fieldset.form-columns-2 .field {width:50% !important;margin: 0 !important;}
+  .lpForm form fieldset.form-columns-3 .field { width:33.33% !important; }
+  .lpForm form .field {padding: 0px 0 28px !important;}
+  .lpForm form fieldset .field {padding-left: 10px !important;padding-right: 10px !important;}
+  .lpForm form ul.multi-container { padding-top:10px; }
+  .lpForm form ul {margin: 0;padding: 0;list-style-type: none;}
+  .lpForm form ul.multi-container li { margin:5px 0; }
+  .lpForm textarea, .blogPostForm input[type="text"], .blogPostForm input[type="number"], .blogPostForm input[type="email"], .blogPostForm input[type="tel"], .blogPostForm select {background-color: transparent !important;border-bottom: 1px solid #16170F !important;border-radius: 0px !important;color: #16170F !important;display: block !important;font-family: 'Gibson' !important;font-size: 16px !important;line-height: 1.1 !important;margin: 0;outline: none;padding: 0 0 10px 0!important;width: 100%!important;font-weight: 400 !important;}
+  .lpForm textarea { min-height:133px; }
+  .lpForm form fieldset label > .hs-form-required {color: #16170F;font-weight: 300;padding-left: 0px;}
+  .lpForm input[type=submit] {background-color: #212121;border: 1px solid #212121 !important;display: inline-block;padding: 8px 24px;text-align: center;transition: all .3s ease;vertical-align: middle;border-radius: 0;cursor: pointer;color:  #fff;font-family: Gibson;font-size: 17px;font-style: normal;font-weight: 700;line-height: 16px;}
+  .lpForm input[type=submit]:hover {background-color: #0C2237!important;color: #fff !important;border-color: #0C2237 !important;}
+  .lpForm .hs_error_rollup {display: none;}
+  .lpForm .hs-error-msgs{padding-top: 5px; font-weight: 300;}
+  .lpForm .hs-error-msg{font-size: 14px; line-height: 1.3; color: #EF6B51; }
+  .lpForm .submitted-message {color: #212121;font-size: 20px; text-align:center;font-weight: 500;}
+  .lpForm .hs-form input:focus {background-color: transparent;}
+  .lpForm form fieldset .field label {order: 1;margin: 0;color: #16170F;);font-family: Gibson;font-size: 15px;font-style: normal;font-weight: 300;line-height: 1.26;}
+  .lpForm form fieldset .field {display: flex;flex-direction: column;margin: 0 !important;}
+  .lpForm ul.no-list.hs-error-msgs {order: 2;}
+  .lpForm select, .blogPostForm select.hs-input {background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='7' viewBox='0 0 12 7' fill='none'%3E%3Cpath d='M5.56133 6.62344L5.03164 6.09375L0.531641 1.59375L-0.000390053 1.06172L1.06133 0L1.59102 0.529688L5.56133 4.5L9.53164 0.532031L10.0613 0L11.123 1.06172L10.5934 1.59141L6.09336 6.09141L5.56133 6.62344Z' fill='%2316170F'/%3E%3C/svg%3E");}
+  .lpForm .user-is-tabbing :focus {box-shadow: none;}
+  .lpForm form fieldset .field label span {display: inline-block;}
+  .lpForm ul.inputs-list li, .blogPostForm ul.inputs-list {margin: 0;}
+  .lpForm .actions {text-align: center;}
+  .lpForm span.mdl-checkbox__label {color: var(--Primary-Charcoal, #16170F);font-family: Gibson;font-size: 12px;font-style: normal;font-weight: 300;line-height: 1.41 !important;}
+  .lpForm .mdl-checkbox__box-outline {border: 1px solid #16170F !important;border-radius: 0;}
+  .lpForm .hs-form .mdl-checkbox.is-checked .mdl-checkbox__tick-outline {background-color: {background-color: #16170F;}}
+  .lpForm .hs-form .mdl-checkbox.is-checked .mdl-checkbox__box-outline {border-color: #16170F;}
+
+  .blContent h5 { font-family: Georgia Pro light!important;font-size: 19px!important;font-weight: 300!important;text-transform: inherit!important; }
+
+/*---------------- POPUP FORM STYLING ----------------*/
+
+.hhs-pop.hhs-modal {
+  max-width: 680px;
+  padding: 45px 15px;
+}
+
+.hs-form .mdl-checkbox.is-checked .mdl-checkbox__tick-outline {
+  background: #00AE8A; url("data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjxzdmcKICAgeG1sbnM6ZGM9Imh0dHA6Ly9wdXJsLm9yZy9kYy9lbGVtZW50cy8xLjEvIgogICB4bWxuczpjYz0iaHR0cDovL2NyZWF0aXZlY29tbW9ucy5vcmcvbnMjIgogICB4bWxuczpyZGY9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkvMDIvMjItcmRmLXN5bnRheC1ucyMiCiAgIHhtbG5zOnN2Zz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciCiAgIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIKICAgdmVyc2lvbj0iMS4xIgogICB2aWV3Qm94PSIwIDAgMSAxIgogICBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJ4TWluWU1pbiBtZWV0Ij4KICA8cGF0aAogICAgIGQ9Ik0gMC4wNDAzODA1OSwwLjYyNjc3NjcgMC4xNDY0NDY2MSwwLjUyMDcxMDY4IDAuNDI5Mjg5MzIsMC44MDM1NTMzOSAwLjMyMzIyMzMsMC45MDk2MTk0MSB6IE0gMC4yMTcxNTcyOSwwLjgwMzU1MzM5IDAuODUzNTUzMzksMC4xNjcxNTcyOSAwLjk1OTYxOTQxLDAuMjczMjIzMyAwLjMyMzIyMzMsMC45MDk2MTk0MSB6IgogICAgIGlkPSJyZWN0Mzc4MCIKICAgICBzdHlsZT0iZmlsbDojZmZmZmZmO2ZpbGwtb3BhY2l0eToxO3N0cm9rZTpub25lIiAvPgo8L3N2Zz4K")
+}
+.hs-form .mdl-checkbox.is-checked .mdl-checkbox__box-outline {
+  border-color: #00AE8A;
+}
+
+.blocker {
+  background: rgba(22,23,15,0.8);
+}
+
+.modal {
+  box-shadow: 0 0 50px #16170F;
+}
+
+.submitted-message p {
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.5em;
+}
+
+/*---------------- TO ENSURE HEADERS DON'T WRAP/HYPHENATE ----------------*/
+
+h1, h2, h3, h4, h5, h6 {
+  hyphens: none;
+}
+
+
+/*---------------- TO ENSURE APPROPRIATE FALLBACK FONTS ----------------*/
+
+/*------ STANDARD PAGES ------*/
+h1, h3, h5 {
+    font-family: "Gibson", Arial, sans-serif !important;
+}
+
+h2, h4, h6 {
+	font-family: "Georgia Pro", Georgia, serif !important;
+}
+
+div.aut-nm h4 {
+	font-family: "Gibson", Arial, sans-serif !important;
+	font-weight: 700;
+	font-size: 21px;
+}
+
+/*------ BLOG PAGES ------*/
+/*
+div.blContent-in > div.blContent > span.hs_cos_wrapper_post_body > h3, div.blContent-in > div.blContent > span.hs_cos_wrapper_post_body > h5 {
+    font-family: "Georgia Pro", Georgia, serif !important;
+	font-weight: light;
+}
+
+div.blContent-in > div.blContent > span.hs_cos_wrapper_post_body > h2, div.blContent-in > div.blContent > span.hs_cos_wrapper_post_body > h4, div.blContent-in > div.blContent > span.hs_cos_wrapper_post_body > h6 {
+	font-family: "Gibson", Arial, serif !important;
+	font-weight: bold;
+}
+*/
+
+/* .blps-cnt h2 {font-size: 33px!important;font-family: 'Gibson',Arial,sans-serif !important;font-weight: 700;}
+  .blps-cnt h3 {font-family: 'Georgia Pro',Georgia,serif !important;font-size: 32px;font-weight: 300;text-transform:none;}
+  .blps-cnt h4 {font-family: 'Gibson', Arial, sans-serif !important;font-weight: 700; font-size: 25px!important;}
+  .blps-cnt h5, .post-page-full h5 {font-family: 'Georgia Pro',Georgia,serif !important; font-size:25px !important; font-weight: 300!important;}
+  .blps-cnt h6 {font-family: 'Gibson',Arial,sans-serif !important;font-size: 18px;font-weight: 700;line-height: 1.09!important;}
+*/
+
+
+
+/*---------------- RESOURCE CARD TITLE STYLING FOR VERSA CARDS PRO-E MODULE ----------------*/
+
+.blog-card--title {
+  font-family: "Georgia Pro";
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 32px;
+}
+
+/*---------------- CTA BLOCK IN HEADER NAV ----------------*/
+
+div.header-nav-visual-cta-block {
+  display: flex;	
+  background-color: #ffffff;
+}
+
+div.header-nav-visual-cta-block p {
+  margin-bottom: 0px;
+}
+
+div.header-nav-visual-cta-block p img {
+  flex: 0 0 auto;
+}
+
+div.header-nav-visual-cta-block div.visual-cta-block-content {
+  flex: 1;
+  padding: 20px 20px;
+  align-self: center;
+}
+
+p > a:not([class^="cta"]),
+div.header-nav-visual-cta-block div.visual-cta-block-content a.cta-four {
+  padding: 10px 0px !important;
+  text-decoration: underline !important;
+  text-underline-offset: 10px !important;
+  transition: all 0.2s ease-in-out !important;
+  font-size: 17px !important;
+}
+p > a:not([class^="cta"]) {	text-underline-offset: 3px !important; font-size: inherit !important;}
+
+p > a:not([class^="cta"]):hover,
+div.header-nav-visual-cta-block div.visual-cta-block-content a.cta-four:hover,
+div.header-nav-visual-cta-block div.visual-cta-block-content a.cta-four:active,
+div.header-nav-visual-cta-block div.visual-cta-block-content a.cta-four:focus {
+  transform: translate(0, -3px) !important;
+  text-underline-offset: 13px !important;
+}
+p > a:not([class^="cta"]):hover {	text-underline-offset: 5px !important;}
+
+/*---------------- CTA DARK THEME ----------------*/
+.dark-bg *:not(blockquote):not(input) {color:#FFF;}
+.dark-bg a {color:#FFF;}
+.dark-bg a:hover {color:#257DC1;}
+.dark-bg .cta-primary {background-color:#91EBC9!important; color: #16170F!important;}
+.dark-bg .cta-primary:hover {background-color:#FFF!important; color: #16170F!important;}
+.dark-bg .cta-secondary {background-color:#FFF!important; color: #16170F!important;}
+.dark-bg .cta-secondary:hover {background-color:#91EBC9!important; color: #16170F!important;}
+
+.blogPostForm input[type="submit"] {padding: 8px 24px !important; font-size: 17px !important;color: #ffffff !important;background-color:#16170f !important; border:0 !important;}
+.blogPostForm input[type="submit"]:hover {color: #16170f !important;background-color:#91EBC9 !important;}
+
+
+/*---------------- FORM FIELD STYLING ----------------*/
+
+div.blog-index__post-tags a.blog-index__post-tag {
+  padding: 8px 12px;
+  border-radius: 0px;
+  font-family: 'Gibson';
+  font-weight: 400;
+}
+.hhs-foot-rss label.hs-error-msg {color:#EE3B27 !important;}
+
+/*---- image lightbox ----*/
+@media screen and (max-width: 991px) {
+  #lightbox .lb-nav a.lb-next {right: 20px !important; width:30px !important; height:30px !important;}
+  #lightbox .lb-nav a.lb-prev {left: 20px !important; width:30px !important; height:30px !important;}
+  #lightboxOverlay.lightboxOverlay {width:100% !important;}
+}
+.lb-next:before, .lb-prev:before {display: none !important;}
+
+
+.blps-cnt .hs_cos_wrapper_type_module .clean-base .row {padding:10px 0!important}
+.blps-cnt .hs_cos_wrapper_type_module .container,
+.blps-cnt .slick-track .c-slide-2 {padding:0!important;}
+
+
+/*---------------- TIMELINE STYLING ----------------*/
+
+.timeline .timeline-text p {
+  font-size: 17px!important;
+  text-wrap: balance!important;
+  padding-bottom: 15px!important;
+}
+
+.timeline .timeline-date {
+  font-family: gibson!important;
+  font-weight: 400!important;
+}
+
+.timeline .timeline-end p, #hs_cos_wrapper_module_17726534482949 .timeline .timeline-start p, #hs_cos_wrapper_module_17726534482949 .timeline .timeline-year p {
+  font-family: gibson!important;
+  font-weight: 700!important;
+}
+
+.timeline .timeline-end p, .timeline .timeline-start p, .timeline .timeline-year p, .timeline .timeline-date:after {
+  box-shadow: none!important;
+}
+
+.timeline .timeline-year p {
+    display: flex!important;
+    flex-direction: column!important;
+    justify-content:center!important;
+    vertical-align: middle!important;
+    width: 100px !important;
+    height: 100px !important;
+    background: #D2F4E5!important;
+    font-size: 17px!important;
+}
+
+.timeline .timeline-continue {
+  padding: 30px 0!important;
+}
+
+
+
+
+/*---------------- BLOG LISTING PAGE STYLING ----------------*/
+
+/*---- Tag Filter ----*/
+
+div.post__filter select.post__category-selector {
+  background-color: #ffffff00;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid #16170f;
+  color: #16170f;
+}
+div.post__filter select.post__category-selector option {
+  color: #16170f !important;
+}
+
+/*---- Author and publish date ----*/
+
+div.blog-index__post-author > span > a.blog-index__post-author-name, 
+div.blog-index__post-author > span > span.pub-date {
+  font-family: 'Gibson' !important;
+  font-weight: 400 !important;
+}
+
+/*---- Author and publish date ----*/
+
+div.blog-index__post.blog-index__post--small > div > a.blog-index__post-button,
+div.blog-index__post.blog-index__post--large > div > a.blog-index__post-button > i {
+  font-size: 26px;
+}
+
+
+/*---------------- FOOTER STYLING ----------------*/
+
+
+div.hhs-footer-mod div.col-md-6.col-12 {
+  border-left: 1px solid #16170f;
+  padding: 0px 60px;
+  text-align: center;
+}
+
+div.hhs-footer-mod div.hhs-foot-nav-base {
+  align-items: center;
+}
+
+div.hhs-footer-mod div.hhs-foot-nav-base div.col-sm-6.order-2-mobile p.hhs-foot-copyright {
+  font-size: 17px;
+  font-family: "Gibson";
+  font-weight: 400;
+}
+
+div.hhs-footer-mod div.hhs-foot-nav-base div.col-sm-6.order-2-mobile span div ul li.hs-menu-item a {
+  font-family: "Gibson";
+  font-weight: 400;
+  font-size: 17px;
+}
+
+/* 11/4/2024 CSS */
+
+.hiring-forms input[type="submit"] { cursor: pointer; }
+.hiring-forms .hs-form-field {display: flex;flex-wrap: wrap;}
+.hiring-forms .hs-form-field > * {width: 100%;}
+.hiring-forms .hs-form-field label {width: 100%;order: 2;margin-bottom: 0;margin-top: 10px;}
+.hiring-forms .hs_submit.hs-submit {margin-top: 20px;}
+
+
+.c-social-team-con a { border-right: 1px solid #16170f;margin-right: 10px;}
+.c-social-team-con a:last-child {border-right: none;margin-right: 0;}
+.c-social-team-con a {font-size: 20px;}
+.c-social-team-con {display: inline-flex;flex-wrap: wrap;}
+
+
+/* End 11/4/2024 CSS */
+
+/* 1/1/2025 */
+
+.hhs-blog-author-con p.blog-header__subtitle , .hhs-blog-author-con h1.blog-header__title {color: #36454F;}
+ 
+/* ENd 1/1/2025 */
+
+
+@media (max-width: 960px) {
+
+  .hamburger-icon .line {   background: #16170f !important; }
+
+}
+
+@media (max-width: 720px) {
+  div.hhs-footer-mod div.col-md-6.col-12 {
+    border-left: none;
+    padding: 0px 15px;
+  }
+  div.hhs-footer-mod div.col-md-6.col-12 div.hs-submit.hs_submit {
+    padding-bottom: 30px;
+  }
+}
+
+@media (min-width: 992px) {
+  body .hhs-header-hat .container,
+  body .hhs-top-bar .container {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+#return-to-top {
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+
+}
